@@ -20,7 +20,7 @@ class ViewController: UIViewController {
 
         // Do any additional setup after loading the view, typically from a nib.
     }
-    override func viewWillAppear(_ animated: Bool) {
+    override func viewWillAppear(animated: Bool) {
         super.viewWillAppear(animated)
         wifiLabel?.text = "WiFi:"+NetworkModel.getWiFiIPAddress()
         cellularLabel?.text = "Cellular:"+NetworkModel.getCellularIPAddress()
